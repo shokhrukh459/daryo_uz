@@ -10,6 +10,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
         home: Scaffold(
       appBar: AppBar(
         title: Text("Daryo"),
@@ -41,17 +42,40 @@ class MyApp extends StatelessWidget {
                     ),
                     Row(
                       children: [
-                        const Text("Toshkent", style: TextStyle(color: Colors.white),),
+                        const Text(
+                          "Toshkent",
+                          style: TextStyle(color: Colors.white),
+                        ),
                         const Expanded(child: SizedBox()),
-                        const Icon(Icons.cloud_queue_rounded, color: Colors.white,),
-                        const SizedBox(width: 8,),
-                        const Text("+12'", style: TextStyle(color: Colors.white), ),
+                        const Icon(
+                          Icons.cloud_queue_rounded,
+                          color: Colors.white,
+                        ),
+                        const SizedBox(
+                          width: 8,
+                        ),
+                        const Text(
+                          "+12'",
+                          style: TextStyle(color: Colors.white),
+                        ),
                       ],
                     )
                   ],
                 ))
           ],
         ),
+      ),
+      body: ListView(
+        scrollDirection: Axis.horizontal,
+        children: <Widget>[
+          TextButton(
+            onPressed: () => {},
+            child: Padding(
+              padding: const EdgeInsets.all(12.0),
+              child: Text("So'ngi yangiliklar"),
+            ),
+          ),
+         ],
       ),
     ));
   }
