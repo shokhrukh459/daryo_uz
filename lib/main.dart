@@ -10,73 +10,125 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
+        debugShowCheckedModeBanner: false,
         home: Scaffold(
-      appBar: AppBar(
-        title: Text("Daryo"),
-        actions: [
-          Icon(Icons.search),
-          SizedBox(
-            width: 16,
-          )
-        ],
-      ),
-      drawer: Drawer(
-        child: ListView(
-          children: [
-            DrawerHeader(
-                decoration: BoxDecoration(color: Colors.blue),
-                child: Column(
-                  children: [
-                    Row(
+          appBar: AppBar(
+            title: Text("Daryo"),
+            actions: [
+              Icon(Icons.search),
+              SizedBox(
+                width: 16,
+              )
+            ],
+          ),
+          drawer: Drawer(
+            child: ListView(
+              children: [
+                DrawerHeader(
+                    decoration: BoxDecoration(color: Colors.blue),
+                    child: Column(
                       children: [
-                        Text(
-                          "Daryo",
-                          style: TextStyle(fontSize: 24, color: Colors.white),
+                        Row(
+                          children: [
+                            Text(
+                              "Daryo",
+                              style:
+                                  TextStyle(fontSize: 24, color: Colors.white),
+                            ),
+                            //toggle button uncha tuwunmadim
+                          ],
                         ),
-                        //toggle button uncha tuwunmadim
+                        SizedBox(
+                          height: 24,
+                        ),
+                        Row(
+                          children: [
+                            const Text(
+                              "Toshkent",
+                              style: TextStyle(color: Colors.white),
+                            ),
+                            const Expanded(child: SizedBox()),
+                            const Icon(
+                              Icons.cloud_queue_rounded,
+                              color: Colors.white,
+                            ),
+                            const SizedBox(
+                              width: 8,
+                            ),
+                            const Text(
+                              "+12'",
+                              style: TextStyle(color: Colors.white),
+                            ),
+                          ],
+                        )
                       ],
-                    ),
-                    SizedBox(
-                      height: 24,
-                    ),
-                    Row(
-                      children: [
-                        const Text(
-                          "Toshkent",
-                          style: TextStyle(color: Colors.white),
-                        ),
-                        const Expanded(child: SizedBox()),
-                        const Icon(
-                          Icons.cloud_queue_rounded,
-                          color: Colors.white,
-                        ),
-                        const SizedBox(
-                          width: 8,
-                        ),
-                        const Text(
-                          "+12'",
-                          style: TextStyle(color: Colors.white),
-                        ),
-                      ],
-                    )
-                  ],
-                ))
-          ],
-        ),
-      ),
-      body: ListView(
-        scrollDirection: Axis.horizontal,
-        children: <Widget>[
-          TextButton(
-            onPressed: () => {},
-            child: Padding(
-              padding: const EdgeInsets.all(12.0),
-              child: Text("So'ngi yangiliklar"),
+                    ))
+              ],
             ),
           ),
-         ],
-      ),
-    ));
+          body: Column(
+            children: [
+              Container(
+                height: 80,
+                child: ListView(
+                  scrollDirection: Axis.horizontal,
+                  children: <Widget>[
+                    TextButton(
+                      onPressed: () => {},
+                      child: Padding(
+                        padding: const EdgeInsets.all(12.0),
+                        child: Text("So'ngi yangiliklar"),
+                      ),
+                    ),
+                    TextButton(
+                      onPressed: () => {},
+                      child: Padding(
+                        padding: const EdgeInsets.all(12.0),
+                        child: Text("So'ngi yangiliklar"),
+                      ),
+                    ),
+                    TextButton(
+                      onPressed: () => {},
+                      child: Padding(
+                        padding: const EdgeInsets.all(12.0),
+                        child: Text("So'ngi yangiliklar"),
+                      ),
+                    ),
+                    TextButton(
+                      onPressed: () => {},
+                      child: Padding(
+                        padding: const EdgeInsets.all(12.0),
+                        child: Text("So'ngi yangiliklar"),
+                      ),
+                    ),
+                    TextButton(
+                      onPressed: () => {},
+                      child: Padding(
+                        padding: const EdgeInsets.all(12.0),
+                        child: Text("So'ngi yangiliklar"),
+                      ),
+                    ),
+                    TextButton(
+                      onPressed: () => {},
+                      child: Padding(
+                        padding: const EdgeInsets.all(12.0),
+                        child: Text("So'ngi yangiliklar"),
+                      ),
+                    ),
+                    TextButton(
+                      onPressed: () => {},
+                      child: Padding(
+                        padding: const EdgeInsets.all(12.0),
+                        child: Text("So'ngi yangiliklar"),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+
+            ],
+          ),
+
+        ));
   }
 }
