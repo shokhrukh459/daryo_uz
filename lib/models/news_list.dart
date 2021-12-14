@@ -16,29 +16,36 @@ class NewsWidget {
         "Maslaxatlar",
         "15:00 | 08 dekabr ",
          342,
-        "imageUrl",
-        "Text long"
+        "assets/images/andijon.jpg",
+        "Murakkab holatlarda simptomlar yomonlashib, mushaklarning ishlamay qolishi natijasida bosh barmoqning zaiflashishiga olib kelishi mumkin"
     ),
     NewsWidget(
         "Maslaxatlar",
         "15:00 | 08 dekabr ",
         342,
-        "imageUrl",
-        "Text long"
+        "assets/images/boks.jpg",
+        "Murakkab holatlarda simptomlar yomonlashib, mushaklarning ishlamay qolishi natijasida bosh barmoqning zaiflashishiga olib kelishi mumkin"
     ),
     NewsWidget(
         "Maslaxatlar",
         "15:00 | 08 dekabr ",
         342,
-        "imageUrl",
-        "Text long"
+        "assets/images/dollar.jpg",
+        "Murakkab holatlarda simptomlar yomonlashib, mushaklarning ishlamay qolishi natijasida bosh barmoqning zaiflashishiga olib kelishi mumkin"
     ),
     NewsWidget(
         "Maslaxatlar",
-        "15:00 | 08 dekabr ",
+        "15:00 | 08 dekabr",
         342,
-        "imageUrl",
-        "Text long"
+        "assets/images/prezident.jpg",
+        "Murakkab holatlarda simptomlar yomonlashib, mushaklarning ishlamay qolishi natijasida bosh barmoqning zaiflashishiga olib kelishi mumkin"
+    ),
+    NewsWidget(
+        "Maslaxatlar",
+        "15:00 | 08 dekabr",
+        342,
+        "assets/images/senat.jpg",
+        "Murakkab holatlarda simptomlar yomonlashib, mushaklarning ishlamay qolishi natijasida bosh barmoqning zaiflashishiga olib kelishi mumkin"
     ),
   ];
 }
