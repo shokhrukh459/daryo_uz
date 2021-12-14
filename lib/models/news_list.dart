@@ -1,44 +1,41 @@
-class News {
+class NewsWidget {
   String typeNews;
   String infoNews;
   int viewCount;
   String imageUrl;
   String textNews;
-
-  News(
+  NewsWidget(
     this.typeNews,
     this.infoNews,
     this.viewCount,
     this.imageUrl,
     this.textNews,
   );
-
-
-  static List<News> newlist= [
-    News(
+  static List<NewsWidget>newlist= [
+    NewsWidget(
         "Maslaxatlar",
         "15:00 | 08 dekabr ",
          342,
         "imageUrl",
         "Text long"
     ),
-    News(
-        "Yangiliklar",
-        "17:00 | 08 dekabr ",
+    NewsWidget(
+        "Maslaxatlar",
+        "15:00 | 08 dekabr ",
         342,
         "imageUrl",
         "Text long"
     ),
-    News(
+    NewsWidget(
         "Maslaxatlar",
-        "11:00 | 08 dekabr ",
+        "15:00 | 08 dekabr ",
         342,
         "imageUrl",
         "Text long"
     ),
-    News(
+    NewsWidget(
         "Maslaxatlar",
-        "09:00 | 08 dekabr ",
+        "15:00 | 08 dekabr ",
         342,
         "imageUrl",
         "Text long"

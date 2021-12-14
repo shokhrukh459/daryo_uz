@@ -8,9 +8,9 @@ class News extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       child:ListView.builder(
-          itemCount: News.newlist.length,
+          itemCount: NewsWidget.newlist.length,
           itemBuilder: (BuildContext context, int index){
-            return Text(News.newlist[index].typeNews);
+            return Text(NewsWidget.newlist[index].typeNews);
 
           }),
     );
