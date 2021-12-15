@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:daryo_uz/screens/news.dart';
 import 'package:daryo_uz/screens/main_news.dart';
 import 'package:daryo_uz/screens/most_read.dart';
+import 'package:daryo_uz/screens/detail_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -13,6 +14,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      routes: {
+        '/' : (context) => News(),
+        '/Second' : (context) => DetailPage(),
+      },
         debugShowCheckedModeBanner: false,
         home: DefaultTabController(
           initialIndex: 0,

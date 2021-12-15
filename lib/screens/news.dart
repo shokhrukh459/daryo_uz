@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:daryo_uz/main.dart';
 import 'package:daryo_uz/models/news_list.dart';
 
 class News extends StatelessWidget {
@@ -11,7 +12,7 @@ class News extends StatelessWidget {
           itemCount: NewsWidget.newlist.length,
           itemBuilder: (BuildContext context, int index){
             return GestureDetector(
-              onTap: ()=>{},
+              onTap: ()=>{ },
               child: Card(
                 child: Column(
                   children: [
